@@ -1,0 +1,678 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+#divTitulo {
+  background-color: rgb(50, 5, 5);
+  height: 45px;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  padding-top: 2px;
+}
+
+#divTitulo h1 a {
+  font-family: 'Water Brush', cursive;
+}
+
+#divTitulo a {
+  text-decoration: none;
+}
+
+#navegacao {
+  background-color: rgb(50, 5, 5);
+  height: 55px;
+  width: 330px;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  position: fixed;
+  top: 43px;
+  right: 25%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 2;
+}
+
+#navCatalogo {
+  position: relative;
+  cursor: pointer;
+}
+
+.invisivel {
+  display: none;
+}
+
+.visivel {
+  display: block;
+}
+
+.navBorder {
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+#menuNavegacao ul li:hover {
+  font-size: 18px;
+}
+
+#navegacao a {
+  text-decoration: none;
+}
+
+#navegacao a:hover {
+  font-size: 18px;
+}
+
+a:checked {
+  text-decoration: none;
+}
+
+#logo {
+  width: 160px;
+  height: 155px;
+  position: relative;
+  top: 25px;
+  left: 30%;
+  z-index: 3;
+  border-radius: 10px;
+}
+
+#inicio {
+  height: 555px;
+}
+
+#backgroundImage {
+  background-image: url("imgs/CarneBackground.png");
+  width: 100%;
+  height: 700px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 35px;
+  z-index: -1;
+  filter: brightness(60%);
+}
+
+#carrosselCarnes {
+  background: rgb(50, 5, 5);
+  width: 800px;
+  height: 250px;
+  margin: auto;
+  position: relative;
+  top: 306px;
+  border-radius: 20px 20px 0 0;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 30px;
+  padding-left: 30px;
+}
+
+.classCarnesCarrossel {
+  width: 180px;
+  height: 170px;
+  position: relative;
+  top: 50px;
+}
+
+.classCarnesCarrossel span {
+  text-align: center;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  top: 5px;
+  font-size: 18px;
+}
+
+.fotosCarrossel {
+  width: 180px;
+  height: 150px;
+  border-radius: 10px;
+}
+
+#tituloCarrossel {
+  width: 220px;
+  height: 10px;
+  position: absolute;
+  left: 50px;
+  top: 15px;
+  display: block;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.setas {
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.imgCards {
+  width: 420px;
+  height: 350px;
+  border-radius: 20px;
+  margin-top: 35px;
+}
+
+#imgCorteBoi {
+  float: left;
+  margin-left: 20%;
+}
+
+.cardConteudo {
+  width: 100%;
+  height: 420px;
+  background: rgb(50, 5, 5);
+  position: relative;
+}
+
+#tituloCortesBoi {
+  width: 445px;
+  height: 25px;
+  margin-left: 25px;
+}
+
+.pConteudo {
+  font-size: 17px;
+  text-align: center;
+  width: 500px;
+  height: 200px;
+  margin-top: 10px;
+}
+
+.spaceBCard {
+  margin-top: 25px;
+}
+
+#conteudoCortesBoi {
+  position: absolute;
+  margin-left: 100px;
+  top: 25%;
+  left: 850px;
+}
+
+.tituloConteudo {
+  font-size: 20px;
+}
+
+#conteudoPicanha {
+  position: absolute;
+  margin-left: 350px;
+  top: 25%;
+}
+
+#tituloPicanha {
+  margin-left: 70px;
+}
+
+#imgPicanha {
+  float: right;
+  margin-right: 26%;
+  margin-top: 50px;
+}
+
+#cardCortesExoticos {
+  height: 950px;
+  position: relative;
+}
+
+#divTituloCortesExoticos {
+  text-align: center;
+  font-size: 30px;
+  background-color: black;
+  width: 420px;
+  height: 75px;
+  border-radius: 0 0 15px 15px;
+  position: absolute;
+  left: 165px;
+}
+
+#divTituloCortesExoticos h3 {
+  margin: 15px;
+}
+
+.lineCortesExoticos {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-top: 105px;
+}
+
+#line2CortesExoticos {
+  padding-top: 50px;
+}
+
+.imgsCortesExoticos {
+  width: 400px;
+  height: 320px;
+  border-radius: 20px;
+}
+
+.nomeCarnesExoticas {
+  padding-top: 5px;
+  font-size: 27px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#imgFuncionarios {
+  position: absolute;
+  right: 0;
+  width: 562px;
+}
+
+#conteudoSobreNos {
+  position: absolute;
+  top: 25%;
+  left: 15%;
+}
+
+#conteudoSobreNos p {
+  width: 700px;
+  text-align: center;
+}
+
+#conteudoSobreNos h3 {
+  font-size: 22px;
+  margin-left: 65px;
+  margin-bottom: 20px;
+}
+
+#cardLocalizacao {
+  height: 645px;
+}
+
+#tituloVenhaNosConhecer {
+  font-size: 35px;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-weight: bold;
+}
+
+#divEndereco {
+  text-align: center;
+  font-size: 30px;
+  padding-top: 15px;
+}
+
+footer {
+  position: relative;
+  width: 1920px;
+  height: 600px;
+}
+
+#imgFooter {
+  background-image: url("imgs/fogoChurrasqueira.jpg");
+  width: 100%;
+  height: 600px;
+  position: absolute;
+  z-index: -2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(60%);
+}
+
+.infTitulo {
+  font-size: 27px;
+  margin-bottom: 7px;
+}
+
+.infFooter {
+  font-size: 20px;
+  margin: 1px;
+}
+
+.infFooter a {
+  text-decoration: none;
+}
+
+#infFuncionamento {
+  position: absolute;
+  left: 180px;
+  top: 100px
+}
+
+#infContato {
+  position: absolute;
+  top: 230px;
+  left: 180px;
+}
+
+#infSociais {
+  position: absolute;
+  top: 390px;
+  left: 180px;
+}
+
+#overlayDireitosReservados {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  z-index: 9999;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+#conteudoDireitosReservados {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+  margin-bottom: 5px;
+}
+
+#spanDireitosReservados {
+  margin-left: 180px;
+}
+
+#spanDesenvolvedor {
+  margin-right: 180px;
+}
+
+#bodyContato {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+#divTituloContato {
+  background-color: rgb(50, 5, 5);
+  height: 45px;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: space-evenly;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 5px;
+}
+
+#divTituloContato h1 a {
+  font-family: 'Water Brush', cursive;
+}
+
+#divTituloContato a {
+  text-decoration: none;
+}
+
+#navegacaoContato {
+  background-color: transparent;
+  height: 55px;
+  width: 330px;
+  text-align: center;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  right: 800px;
+  top: 50px;
+  z-index: 2;
+}
+
+#navegacaoContato a {
+  text-decoration: none;
+}
+
+#navegacaoContato a:hover {
+  font-size: 18px;
+}
+
+#imgBackgroundContato {
+  background-image: url("imgs/backgroundStore.png");
+  width: 50%;
+  height: 900px;
+  position: absolute;
+  top: 110px;
+  right: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#mainContato {
+  background-color: rgb(50, 5, 5);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+#titleFormulario h2 {
+  position: absolute;
+  top: 20px;
+  left: -3px;
+  font-size: 25px;
+  background-color: rgb(50, 5, 5);
+  width: 300px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+#cardFormulario {
+  background-color: black;
+  border: 3px solid black;
+  width: 50%;
+  height: 900px;
+  position: relative;
+  top: 110px;
+  left: 0px;
+}
+
+#conteudoFormulario {
+  position: absolute;
+  top: 85px;
+  left: 60px;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+#conteudoFormulario h3 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+
+#conteudoFormulario span {
+  padding-top: 5px;
+}
+
+#conteudoFormulario input {
+  color: black;
+}
+
+.btnRadioBtn {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: white;
+  margin-bottom: 5px;
+}
+
+#textoRadioBtn1 {
+  position: absolute;
+  left: 25px;
+  top: 140px;
+}
+#textoRadioBtn2 {
+  position: absolute;
+  left: 25px;
+  top: 165px;
+}
+#textoRadioBtn3 {
+  position: absolute;
+  left: 25px;
+  top: 192px;
+}
+
+.btnSelected {
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color: rgb(50, 5, 5);
+}
+
+#selectCarne {
+  width: 160px;
+  height: 30px;
+  background-color: white;
+  display: flex;
+  padding-left: 5px;
+  position: relative;
+  cursor: pointer;
+}
+
+#selectCarne span {
+  color: black;
+}
+
+#opcoesSelect {
+  width: 160px;
+  height: 115px;
+  background-color: white;
+  margin-top: 5px;
+  position: absolute;
+  z-index: 9999;
+}
+
+#opcoesSelect ul {
+  padding-top: 5px;
+  list-style: none;
+}
+
+#opcoesSelect ul li {
+  width: 160px;
+  padding: 1px;
+  padding-left: 5px;
+  color: black;
+}
+
+#opcoesSelect ul li:hover {
+  cursor: pointer;
+  font-size: 18px;
+  background-color: rgb(50, 5, 5);
+  color: white;
+}
+
+#setaSelect {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+
+.mexerSeta {
+  transform: rotate(270deg);
+}
+
+#divCheckbox {
+  padding-top: 5px;
+}
+
+.btnCheckbox {
+  width: 20px;
+  height: 20px;
+  border-radius: 20%;
+  background: white;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+.btnSelectedCheckbox {
+  border: 1px solid white;
+  border-radius: 50%;
+  background: rgb(50, 5, 5);
+}
+
+#textoCheckbox1 {
+  position: absolute;
+  width: 150px;
+  left: 25px;
+  bottom: 1px;
+}
+#textoCheckbox2 {
+  position: absolute;
+  width: 150px;
+  left: 25px;
+  bottom: 1px;
+}
+#textoCheckbox3 {
+  position: absolute;
+  width: 150px;
+  left: 25px;
+  bottom: 1px;
+}
+
+#submit {
+  background-color: white;
+  color: black;
+  width: 60px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+#footerContato {
+  position: fixed;
+  bottom: 0;
+}
+
+#divTextArea {
+  padding-top: 5px;
+}
+
+#textarea {
+  color: black;
+}
+
+#btnValidar {
+  margin-top: 5px;
+  width: 50px;
+  height: 30px;
+  color: black;
+}
+
+
+.marcado {
+  background-color: #76b776;
+}
+
+.meioMarcado {
+  background-color: red;
+}
+
+.txtBtn {
+  position: absolute;
+  left: 4px;
+  bottom: 1px;
+}

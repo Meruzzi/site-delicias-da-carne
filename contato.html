@@ -1,0 +1,100 @@
+<!-- 1920x1080 -->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <title>Contato</title>
+    <link rel="shortcut icon" href="imgs/iconMeat.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Water+Brush&display=swap" rel="stylesheet">
+</head>
+
+<body id="bodyContato">
+    <header>
+        <div id="divTituloContato">
+            <h1><a href="Site.html">Delícias da Carne</a></h1>
+        </div>
+        <nav id="navegacaoContato">
+            <a href="Site.html">Início</a>
+        </nav>
+    </header>
+    <main id="mainContato">
+        <section>
+            <div id="cardFormulario">
+                <div id="titleFormulario">
+                    <h2>FALE CONOSCO!</h2>
+                </div>
+                <div id="conteudoFormulario">
+                    <h3>Suas informações</h3>
+                    <form name='dados'>
+                        <label>Nome:</label> <input type="text" id="nome" name="nome"><br>
+                        <label>E-mail:</label> <input type="text" id="email" name="email"><br>
+                        <label>Telefone:</label> <input type="text" id="telefone" name="telefone">
+                    </form>
+                    <div id="radioBtn">
+                        <h3>Prefência de carne</h3>
+                        <div class="btnRadioBtn"><span id="textoRadioBtn1">Carnes exóticas</span></div>
+                        <div class="btnRadioBtn"><span id="textoRadioBtn2">Carnes tradicionais</span></div>
+                        <div class="btnRadioBtn"><span id="textoRadioBtn3">Ambas</span></div><span>Ambas</span>
+                    </div>
+                    <div id="btnSelect">
+                        <h3>Tipos de carne Favoritas:</h3>
+                        <div id="selectCarne">
+                            <span id='carneSelecionada'>Selecione aqui!</span>
+                            <img id="setaSelect" src="imgs/setaEsquerda.png" title="Seta para abrir opcoes de carne"
+                                alt="Seta para abrir select">
+                        </div>
+                        <div id="opcoesSelect" class="invisivel">
+                            <ul>
+                                <li class="selectBtn">Bovina</li>
+                                <li class="selectBtn">Suína</li>
+                                <li class="selectBtn">Aves</li>
+                                <li class="selectBtn">Frutos do Mar</li>
+                                <li class="selectBtn">Outras</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="divCheckbox">
+                        <h3>Deseja receber informações por:</h3>
+                <div id="checkBox">   
+                        <div class="btnCheckbox" id="btnMarcarTodos" onclick="selecionarCheckbox(this)"><span id="txtMarcarTodos" class="txtBtn"></span><span id="textoCheckbox1">Todos os meios</span></div>
+                        <div class="btnCheckbox" id="btnEmail" onclick="selecionarCheckbox(this)"><span id="textoCheckbox2">Email</span></div>
+                        <div class="btnCheckbox" id="btnSms" onclick="selecionarCheckbox(this)"><span id="textoCheckbox3">SMS</span></div>
+                    </div>
+                    <div id="divTextArea">
+                    <label>Deixe sua mensagem:</label><br>
+                    <textarea id="textarea" rows="4" cols="50"></textarea>
+                    </div>
+                    <div id="btns">
+                        <div>
+                            <button id="btnValidar" onclick="verificarDados()">Enviar</button>
+                        </div>
+                        <span id="dadosInvalidos"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="imgBackgroundContato">
+        </section>
+        <footer id="footerContato">
+            <div id="overlayDireitosReservados" class="overlayContato"></div>
+            <div id="conteudoDireitosReservados">
+                <span id="spanDireitosReservados">© 2023 Delícias da carne - Todos os direitos reservados.</span>
+                <span id="spanDesenvolvedor">Desenvolvido por Gabriel Meruzzi</span>
+            </div>
+        </footer>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

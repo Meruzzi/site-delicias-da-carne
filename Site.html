@@ -1,0 +1,216 @@
+<!-- 1920x1080 -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <title>Delícias da Carne</title>
+  <link rel="shortcut icon" href="imgs/iconMeat.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Water+Brush&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+</head>
+
+<body>
+  <header id="headerHome">
+    <div id="divTitulo">
+      <h1 class="animate__animated animate__bounceInUp"><a href="#">Delícias da Carne</a></h1>
+    </div>
+    <a href="Site.html"><img id="logo" src="imgs/logo.png" title="Logo site delícias da carne"
+        alt="Logo site delícias da carne"></a>
+    <nav id="navegacao">
+      <a href="#headerHome">Início</a>
+      <a href="#">Catálogo</a>
+      <a href="contato.html">Contato</a>
+      <a href="#sobre">Sobre</a>
+    </nav>
+    <div id="listaCatalogo" class="invisivel">
+      <ul>
+        <li><a href="#">Carnes Bovinas</a></li>
+        <li><a href="#">Carnes Suína</a></li>
+        <li><a href="#">Carnes Nobres</a></li>
+        <li><a href="#">Cortes exóticos</a></li>
+      </ul>
+    </div>
+  </header>
+  <main id="pagPrincipal">
+    <article id="inicio">
+      <div id="backgroundImage"></div>
+      <div id="carrosselCarnes">
+        <span id="tituloCarrossel">Carnes mais
+          pedidas:</span>
+        <button id="setaEsquerdaCarrossel" onclick="CarrosselEsquerda()" class="setas"><img class="setas"
+            title="Seta do Carrossel para esquerda" alt="Seta do Carrossel para esquerda"
+            src="imgs/SetaEsquerda.png"></button>
+        <div class="classCarnesCarrossel">
+          <img src="imgs/Acem.png" alt="Carne Acem cortada" title="Carne Acém cortada" class="fotosCarrossel"
+            id="imgCardUm"><span id="txtCardUm">Acém</span>
+        </div>
+        <div class="classCarnesCarrossel">
+          <img src="imgs/Costela.png" alt="Carne Costela cortada" title="Carne Costela cortada" class="fotosCarrossel"
+            id="imgCardDois"><span id="txtCardDois">Costela</span>
+        </div>
+        <div class="classCarnesCarrossel">
+          <img src="imgs/Cupim.png" alt="Carne Cupim cortada" title="Carne Cupim cortada" class="fotosCarrossel"
+            id="imgCardTres"><span id="txtCardTres">Cupim</span>
+        </div>
+        <button id="setaDireitaCarrossel" onclick="CarrosselDireita()" class="setas"><img class="setas"
+            title="Seta do Carrossel para esquerda" alt="Seta do Carrossel para esquerda"
+            src="imgs/SetaDireita.png"></button>
+      </div>
+    </article>
+    <article id="conteudo">
+      <section>
+        <div id="cardCortesBoi" class="cardConteudo">
+          <img src="imgs/CortesBoi.png" class="imgCards" id="imgCorteBoi" title="Boi ilutrando cortes bovinos"
+            alt="Boi ilustrando cortes bovinos">
+          <div id="conteudoCortesBoi">
+            <h3 class="tituloConteudo" id="tituloCortesBoi">Os tipos de cortes bovinos
+              influenciam no sabor?</h3>
+            <p class="pConteudo" id="pCortesBoi">Muita gente acredita que o simples fato de cortar uma carne não
+              influencia tanto em sua
+              textura, sabor e aparência, mas quem pensa assim está completamente equivocado.
+              <br>
+              No boi, existem várias
+              partes, obviamente, pois a sua estrutura corporal é muito grande. Mas a separação dessas partes deve ser
+              feita
+              de maneira correta.
+              <br>
+              Um dos pontos principais que mais influenciam na qualidade da carne é a realização do corte. Na maioria
+              das
+              carnes, o corte deve ser feito contra as linhas das fibras da carne.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="cardConteudo spaceBCard" onscroll="changeHeaderBorder()">
+          <div id="conteudoPicanha">
+            <h3 class="tituloConteudo" id="tituloPicanha">Conhecendo um pouco sobre a Picanha</h3>
+            <p id="pPicanha" class="pConteudo">A Picanha é um tipo de corte de carne bovina tipicamente brasileira. A
+              origem do nome Picanha advém do tratamento talhante Italiano, nomeadamente do corte Picatta.<br>
+              Esta vara, chamada picana (em espanhol), possuía um ferrão na ponta e servia para picar o gado na parte
+              posterior da sua região lombar.Com o passar do tempo esta região do animal passou a ser chamada picana e
+              posteriormente picanha.</p>
+          </div>
+          <img id="imgPicanha" src="imgs/Picanha.png" title="Picanha cortada em cima de uma tabua"
+            alt="Picanha cortada em cima de uma tabua">
+        </div>
+      </section>
+      <section>
+        <div class="cardConteudo spaceBCard" id="cardCortesExoticos">
+          <div id="divTituloCortesExoticos">
+            <h3>CORTES EXÓTICOS</h3>
+          </div>
+          <div class="lineCortesExoticos">
+            <div class="cardCarnesExotica">
+              <img src="imgs/carneCordeiro.jpg" class="imgsCortesExoticos" title="Carne de cordeiro"
+                alt="Carne de cordeiro">
+              <span class="nomeCarnesExoticas">Carne de Cordeiro</span>
+            </div>
+            <div class="cardCarnesExotica">
+              <img src="imgs/carneJavali.jpg" class="imgsCortesExoticos" title="Carne de javali" alt="Carne de Javali">
+              <span class="nomeCarnesExoticas">Carne de Javali</span>
+            </div>
+            <div class="cardCarnesExotica">
+              <img src="imgs/carneCoelho.jpg" class="imgsCortesExoticos" title="Carne de Coelho" alt="Carne de coelho">
+              <span class="nomeCarnesExoticas">Carne de Coelho</span>
+            </div>
+          </div>
+          <div class="lineCortesExoticos" id="line2CortesExoticos">
+            <div class="cardCarnesExotica">
+              <img src="imgs/carneCordona.jpg" class="imgsCortesExoticos" title="Carne de Cordeiro"
+                alt="Carne de Cordeiro">
+              <span class="nomeCarnesExoticas">Carne de Cordeiro</span>
+            </div>
+            <div class="cardCarnesExotica">
+              <img src="imgs/carneCapivara.jpg" class="imgsCortesExoticos" title="Carde de Javali"
+                alt="Carne de Javali">
+              <span class="nomeCarnesExoticas">Carne de Javali</span>
+            </div>
+            <div class="cardCarnesExotica">
+              <img src="imgs/carneJacare.jpg" class="imgsCortesExoticos" title="Carne de Coelho" alt="Carne de Coelho">
+              <span class="nomeCarnesExoticas">Carne de Coelho</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sobre">
+        <div class="cardConteudo spaceBCard">
+          <div id="conteudoSobreNos">
+            <h3>Bem-vindo ao nosso site de cortes de carnes exóticas!</h3>
+            <p>Nós somos uma equipe apaixonada por trazer os melhores sabores do mundo para a sua mesa.
+              Nosso compromisso é fornecer cortes de carne exóticas de alta qualidade, criados de forma responsável e
+              entregues diretamente na sua casa.
+              Acreditamos que a carne exótica é uma maneira emocionante de experimentar novos sabores e texturas. Por
+              isso, trabalhamos com produtores e fornecedores de confiança em todo o mundo para trazer as melhores
+              opções
+              de carne exótica para nossos clientes.
+              Nossa equipe de especialistas em carne está sempre disponível para ajudá-lo a escolher o corte perfeito
+              para
+              sua refeição ou evento especial. Oferecemos uma ampla variedade de opções, incluindo carne de canguru,
+              zebra, crocodilo, búfalo d'água e muitas outras opções exclusivas.</p>
+          </div>
+          <img src="imgs/funcionarios.jpg" id="imgFuncionarios" title="Foto com funcionarios do açouque"
+            alt="Foto com funcionarios do açouque">
+        </div>
+      </section>
+      <section>
+        <div class="cardConteudo spaceBCard" id="cardLocalizacao">
+          <div id="tituloVenhaNosConhecer">VENHA NOS CONHECER!</div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3673.879981582721!2d-43.195944184022494!3d-22.95464678498742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x997fe09f028e33%3A0x26e83ef7e4032ed2!2sDel%C3%ADcias%20da%20Carne%20Ex%C3%B3ticas%20e%20Cortes%20Argentinos%20e%20Uruguaios!5e0!3m2!1spt-BR!2sbr!4v1679326618213!5m2!1spt-BR!2sbr"
+            width="1920" height="500" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div id="divEndereco">Rua Cristo Redentor 007, Humaitá. Rio de Janeiro - RJ</div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <footer>
+    <div id="imgFooter"></div>
+    <div id="infFuncionamento">
+      <h3 class="infTitulo">HORÁRIO DE FUNCIONAMENTO:</h3>
+      <p class="infFooter">Segunda à sexta das 07:00Hrs às 19Hrs.</p>
+      <p class="infFooter">Sábado das 07:00Hrs às 15Hrs.</p>
+    </div>
+    <div id="infContato">
+      <h3 class="infTitulo">ENTRE EM CONTATO:</h3>
+      <p class="infFooter">Celular: (21) 99999-9999</p>
+      <p class="infFooter">Telefone: (21) 99999-9999</p>
+      <p class="infFooter"><a href="mailto:deliciasdacarneoficial@gmail.com.br">Email: deliciasdacarne@gmail.com</a></p>
+    </div>
+    <div id="infSociais">
+      <h3 class="infTitulo">SIGA NOSSAS REDES SOCIAIS:</h3>
+      <a href="https://www.whatsapp.com/?lang=pt_br" target="
+       _blank"><img src="imgs/logoWpp.png" class="imgRedesSociais" title="WhattsApp (21) 99999-9999"
+          alt="Logo WhattsApp (21) 99999-9999"></a>
+      <a href="https://www.facebook.com/" target="
+          _blank"><img src="imgs/logoFacebook.png" class="imgRedesSociais" title="Facebook: Delicias da Carne Exotica"
+          alt="Logo facebook para entrar na nossa pagina oficial"></a>
+      <a href="https://twitter.com/home?lang=pt" target="
+          _blank"><img src="imgs/logoTwitter.png" class="imgRedesSociais" title="Twitter: @DeliciasDaCarneExoticas"
+          alt="Logo twitter para entrar na nossa pagina oficial"></a>
+      <a href="https://www.youtube.com/" target="
+          _blank"><img src="imgs/logoYoutube.png" class="imgRedesSociais" title="Youtube: Delicias da Carne Oficial"
+          alt="Logo youtube para acessar nosso canal oficial"></a>
+    </div>
+    <div id="overlayDireitosReservados"></div>
+    <div id="conteudoDireitosReservados">
+      <span id="spanDireitosReservados">© 2023 Delícias da carne - Todos os direitos reservados.</span>
+      <span id="spanDesenvolvedor">Desenvolvido por Gabriel Meruzzi</span>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
